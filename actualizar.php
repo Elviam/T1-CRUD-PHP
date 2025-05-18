@@ -24,22 +24,30 @@
         <form action="update.php" method="post">
                 <input type="text" 
                        name="cod_estudiante" 
+                       value="<?php echo $alumno['cod_estudiante']; ?>"
                        hidden>
                 <input type="text" 
                        name="ine" 
                        class="form-control mb-3"
+                       value="<?php echo $alumno['ine']; ?>"
                        placeholder="Escribe tu ine">
                 <input type="text" 
                        name="nombre" 
                        class="form-control mb-3"
+                       value="<?php echo $alumno['nombre']; ?>"
                        placeholder="Escribe tu Nombre">
                 <input type="text" 
                        name="apellidos" 
                        class="form-control mb-3"
+                       value="<?php echo $alumno['apellidos']; ?>"
                        placeholder="Escribe tus Apellidos">
                 <input type="submit" 
-                       class="btn btn-primary"
-                       value="Insertar">
+                       value="Actualizar"
+                       class="btn btn-primary btn-block">
+                       <button class="btn btn-dark" @onclick="location.redirect('index.php')">   
+                        Regresar
+                       </button>
+                       
         </form>
     </div>
 </body>

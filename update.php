@@ -5,7 +5,7 @@
     $nombre = $_POST['nombre'];
     $apellidos = $_POST['apellidos'];
 
-    $sql = "UPDATE SET ine='$ine', nombre='$nombre', apellidos='$apellidos' WHERE cod_estudiante='$cod_estudiante'";
+    $sql = "UPDATE alumnos SET ine='$ine', nombre='$nombre', apellidos='$apellidos' WHERE cod_estudiante='$cod_estudiante'";
     $query = mysqli_query($conn, $sql);
 
     if($query) {
